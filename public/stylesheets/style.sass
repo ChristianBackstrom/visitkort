@@ -1,5 +1,5 @@
 body
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font-family: Roboto
   background-color: #ebebeb;
   width: 100vw
   margin: 0
@@ -21,11 +21,11 @@ a
   position: relative
   width: 100%
   height: 100%
-  transition: transform 2s
+  transition: transform 1.2s
   transform-style: preserve-3d
 
 .flip-card:hover .flip-card-inner 
-  transform: rotateY( 180deg)
+  transform: rotateX( 180deg)
 
 .flip-card-front, .flip-card-back
   position: absolute
@@ -43,22 +43,19 @@ a
 
 .flip-card-back
   background-size: cover !important
+  font-family: Roboto
   background-image: url('/images/visitkortBack.png')
-  transform: rotateY(180deg)
+  transform: rotateX(180deg)
   p
-    margin-top: 6%
+    margin-top: 5%
+    margin-left: 5%
     font-size: calc(108px/4)
   p:nth-child(1)
-    margin-left: 35%
-  p:nth-child(2)
-    margin-left: 20%
-  p:nth-child(3)
-    margin-left: 5%
+    margin-top: 23%
 
 .title
   font-weight: bold
   font-size: calc(108px/3)
-  font-family: Roboto
   margin-top: 10%
   
 
