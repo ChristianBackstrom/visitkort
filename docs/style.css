@@ -37,13 +37,13 @@ a {
 .flip-card-front {
   text-align: center;
   background-size: contain !important;
-  background: url("../public/images/visitkort.png");
+  background: url("/images/visitkort.png");
   font: roboto; }
 
 .flip-card-back {
   background-size: cover !important;
   font-family: Roboto;
-  background-image: url("../public/images/visitkortBack.png");
+  background-image: url("/images/visitkortBack.png");
   transform: rotateX(180deg); }
   .flip-card-back p {
     margin-top: 5%;
