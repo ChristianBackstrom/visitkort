@@ -25,7 +25,7 @@ a {
   transform-style: preserve-3d; }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); }
+  transform: rotateX(180deg); }
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -44,7 +44,7 @@ a {
   background-size: cover !important;
   font-family: Roboto;
   background-image: url("images/visitkortBack.png");
-  transform: rotateY(180deg); }
+  transform: rotateX(180deg); }
   .flip-card-back p {
     margin-top: 5%;
     margin-left: 5%;
@@ -55,6 +55,53 @@ a {
 .title {
   font-weight: bold;
   font-size: calc(108px/3);
-  margin-top: 10%; }
+  margin-top: 10%; 
+}
+
+
+@media (max-width: 640px){
+
+  body {
+    align-items: baseline;
+  }
+
+  .flip-card {
+    background-color: initial;
+    width: calc(1920px / 6);
+    height: calc(1080px / 6);
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: calc(108px/6);
+    margin-top: 10%; 
+  }
+
+  .flip-card-back p {
+    font-size: calc(108px/8); 
+  }
+
+  .title {
+    padding: 2rem;
+  }
+
+  .flip-card-front,.flip-card-back {
+    position: initial;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(0deg);
+  }
+
+  .flip-card-back {
+    margin-top: 3rem;
+    transform: rotateX(0deg);
+    vertical-align: bottom;
+  }
+
+  .flip-card-inner{
+    transform: rotateX(0deg);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
